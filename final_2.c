@@ -3,7 +3,7 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    int num[n],max,end,sum=1,a=0;
+    int num[n],max,end,sum=1,a=0,min;
     if(n>=2 && n<=1000)
     {
         for(int i=0; i<n; i++)
@@ -20,7 +20,6 @@ int main()
                  {
                      a++;
                  }
-
                 max=num[i];
                 end=num[i];
             }
