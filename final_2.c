@@ -3,7 +3,7 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    int num[n],max,end;
+    int num[n],max,end,sum=1;
     for(int i=0;i<n;i++)
     {
         scanf("%d",&num[i]);
@@ -14,9 +14,18 @@ int main()
         if(max<num[i])
         {
             max=num[i];
-            //end=max;
+            end=num[i];
         }
     }
-    printf("%d",max);
+    for(int i=0;i<n;i++)
+    {
+        if(end!=num[i])
+        {
+             sum++;
+        }
+        else
+            break;
+    }
+    printf("%d",sum);
 
 }
