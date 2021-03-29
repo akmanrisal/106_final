@@ -25,6 +25,16 @@ int main()
             }
 
         }
+        min=num[0];
+         for(int i=1; i<n; i++)
+        {
+            if(min>num[i])
+            {
+                min=num[i];
+            }
+
+        }
+
         for(int i=0; i<n; i++)
         {
             if(end!=num[i])
@@ -35,7 +45,7 @@ int main()
         if(a==0)
             printf("%d",sum);
         else
-            printf("%d %d",sum,max);
+            printf("%d %d",min,max);
     }
     else
         printf("Error");
@@ -43,3 +53,18 @@ int main()
     return 0;
 
 }
+ /*max=num[0];
+        for(int i=1; i<n; i++)
+        {
+            if(max==num[i])
+            {
+                min=num[i]
+                max=num[i+1];
+                num[i]=0;
+                 printf("%d",min);
+            }
+
+            else
+                break;
+
+        }*/
